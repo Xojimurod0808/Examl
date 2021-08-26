@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    background-color: #c0c0c0;
+}
+ul{
+    list-style-type: none;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 10px;
+}
+.wrapper{
+    display: flex;
+}
+#list{
+    width: 33.3%;
+    height: 100vh;
+    overflow-y: auto;
+}
+#listPosts{
+    width: 33.3%;
+    height: 100vh;
+    overflow-y: auto;
+}
+#listComents{
+    width: 33.3%;
+    height: 100vh;
+    overflow-y: auto;
+}
+#listComents .list-item{
+    padding: 25px;
+}
+.list-item{
+    position: relative;
+    width: 400px;
+    padding: 25px;
+    margin-left: 30px;
+    padding-bottom: 100px;
+    background-color: #8f8298;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s ease-all;
+}
+.list-item:nth-child(1){
+    margin-top: 50px;
+}
+.list-item:hover{
+    box-shadow: 0 14px 28px rgba(117, 117, 117, 0.25), 0 10px 10px rgba(116, 116, 116, 0.22);
+}
+.container{
+    margin: 0 auto;
+}
+.address-write{
+    margin: 0 0 10px 0;
+    color: #1d2525;
+}
+
+.company-write{
+    color: #1d2525;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.user-name{
+    font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+}
+
+h3{
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.user-button{
+    position: absolute;
+    border: none;
+    padding: 10px 30px;
+    background-color: #154564;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    bottom: 25px;
+    cursor: pointer;
+    transition: background-color .3s ease-in;
+}
